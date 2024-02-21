@@ -3,26 +3,36 @@
   "name": "celatone",
   "title": "Celatone",
   "description": "Search open links for address, contracts, blocks, transactions, and more on Celatone instances.",
-  "icon": "command-icon.png",
+  "icon": "celatone.png",
   "author": "tansawit",
   "owner": "alleslabs",
   "categories": [
-    "Productivity"
+    "Productivity",
+    "Developer Tools"
   ],
   "license": "MIT",
   "commands": [
     {
-      "name": "index",
-      "title": "Show Detail",
-      "description": "Template with a plain detail view",
+      "name": "list-explorers",
+      "title": "List Explorers",
+      "description": "List all available Celatone instances",
+      "mode": "view"
+    },
+    {
+      "name": "search",
+      "title": "Search",
+      "description": "Search for address, contracts, blocks, transactions, and more on Celatone instances.",
       "mode": "view"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.67.1"
+    "@raycast/api": "^1.67.1",
+    "axios": "^1.6.7",
+    "lodash.debounce": "^4.0.8"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",
+    "@types/lodash.debounce": "^4.0.9",
     "@types/node": "20.8.10",
     "@types/react": "18.2.27",
     "eslint": "^8.51.0",
