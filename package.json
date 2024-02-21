@@ -5,7 +5,6 @@
   "description": "Search open links for address, contracts, blocks, transactions, and more on Celatone instances.",
   "icon": "celatone.png",
   "author": "tansawit",
-  "owner": "alleslabs",
   "categories": [
     "Productivity",
     "Developer Tools"
